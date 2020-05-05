@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="main_columns">3</integer>
+    <integer name="description_maxLength">1000</integer>
+    <integer name="name_maxLength">30</integer>
+    <integer name="quantity_maxLength">4</integer>
+</resources>

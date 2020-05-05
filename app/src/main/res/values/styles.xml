@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ImageViewButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:background">@drawable/background_image_button</item>
+        <item name="android:layout_margin">@dimen/imageView_margin</item>
+    </style>
+
+    <style name="TextAppearance.Design.CollapsingToolbar.Expanded.Shadow">
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowRadius">6</item>
+        <item name="android:shadowColor">@android:color/black</item>
+    </style>
+
+    <style name="itemLarge" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="itemMedium" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <!--Text Fields -->
+
+    <style name="MyTheme.DayNight.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/item_padding_horizontal</item>
+        <item name="android:layout_marginEnd">@dimen/item_padding_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/item_padding_vertical</item>
+    </style>
+    <!-- Pickers-->
+    <style name="PickerDialogCut" parent="BasePickerDialogCut">
+
+    </style>
+    <style name="BasePickerDialogCut" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarHeaderLayout">@null</item>
+    </style>
+    <!--Alert Dialog-->
+    <style name="materialAlertDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorPrimary">@color/color_primary</item>
+    </style>
+    <!--
+    <style name="splash" parent="BaseSplash">
+
+    </style>
+    -->
+    <!--
+    <style name="BaseSplash" parent="MyTheme.DayNight">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:statusBarColor">?colorSurface</item>
+
+        <item name="android:navigationBarColor">?colorSurface</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+    </style>
+    -->
+    <dimen name="imageView_margin">2dp</dimen>
+</resources>

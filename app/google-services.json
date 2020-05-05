@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1018743636196",
+    "firebase_url": "https://casita-party-rental.firebaseio.com",
+    "project_id": "casita-party-rental",
+    "storage_bucket": "casita-party-rental.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018743636196:android:4afa47995067315c6cecf1",
+        "android_client_info": {
+          "package_name": "com.example.casitapartyrentalsadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018743636196-83v88m6bckcth2aqga1ne68hp1rvbovi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1bH0JUtlveYPPv-77S1wBAiD9zaCcHkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018743636196-83v88m6bckcth2aqga1ne68hp1rvbovi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

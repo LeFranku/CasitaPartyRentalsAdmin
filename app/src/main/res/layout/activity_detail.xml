@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainModule.view.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/add_padding_main"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".addModule.view.AddMuebleActivity">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:helperText="@string/addMueble_help_required"
+            app:counterMaxLength="@integer/name_maxLength"
+            app:counterEnabled="true"
+            style="@style/MyTheme.DayNight.TextInputLayout">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mueble_hint_name"
+                android:inputType="textPersonName|textCapWords"
+                android:maxLength="@integer/name_maxLength"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/etPrice"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_image_photo_heigth"
+
+                android:src="@drawable/ic_photo_size_select_actual"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewButton"
+                    android:id="@+id/imgDeleteFoto"
+                    android:src="@drawable/ic_close_box"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewButton"
+                    android:id="@+id/imgFromGallery"
+                    android:src="@drawable/ic_image"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewButton"
+                    android:id="@+id/imgFromUrl"
+                    android:src="@drawable/ic_earth_box"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginEnd="@dimen/common_padding_min"
+                app:helperText="@string/addMueble_help_required"
+                style="@style/MyTheme.DayNight.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mueble_hint_price"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/etQuantity"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilQuantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                app:helperText="@string/addMueble_help_required"
+                style="@style/MyTheme.DayNight.TextInputLayout">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/mueble_hint_quantity"
+                    android:inputType="number"
+                    android:maxLength="@integer/quantity_maxLength"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/etDescription"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilDescription"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:helperText="@string/addMueble_help_required"
+            style="@style/MyTheme.DayNight.TextInputLayout"
+            android:layout_marginBottom="@dimen/item_padding_vertical">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/mueble_description"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textCapWords"
+                android:maxLength="@integer/description_maxLength"
+                android:imeOptions="actionDone" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_edit"
+        style="@style/Widget.MaterialComponents.FloatingActionButton"/>
+    <ProgressBar
+        android:id="@+id/pbContent"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

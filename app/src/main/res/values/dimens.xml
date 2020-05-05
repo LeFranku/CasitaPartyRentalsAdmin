@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_padding_vertical">16dp</dimen>
+    <dimen name="item_padding_horizontal">16dp</dimen>
+    <dimen name="item_product_height">128dp</dimen>
+    <dimen name="common_padding_none">0dp</dimen>
+    <dimen name="imageView_inset">-4dp</dimen>
+    <dimen name="imageView_radius">18dp</dimen>
+    <dimen name="add_padding_main">16dp</dimen>
+    <dimen name="common_image_photo_heigth">194dp</dimen>
+    <dimen name="common_padding_min">8dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+</resources>
