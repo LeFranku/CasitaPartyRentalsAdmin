@@ -37,7 +37,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity implements OnItemClickListener, MainView {
-
+//Franku estuvo aquí
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
